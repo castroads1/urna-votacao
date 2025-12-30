@@ -4,47 +4,58 @@
   <meta charset="UTF-8">
   <title>Urna Eletrônica - Simulação</title>
   <link rel="stylesheet" href="style.css">
-  <link href="<title>Urna de votação</title>" rel="stylesheet">
 </head>
 <body>
 
 <div class="container">
   <header>
-    <h1>🗳️ Urna Eletrônica</h1>
-    <p>Votação A e B</p>
+    <h1>💪 Qual seu corpo perfeito?</h1>
+    <p>O Corpo dos sonhos</p>
   </header>
 
   <section class="candidatos">
-
     <div class="card">
-      <img src="img/candidato1.jpg">
-      <h3>Candidato 1</h3>
+      <img src="img/Magrinho.jpg">
+      <h3>Magrinho</h3>
       <button onclick="votar(1)">VOTAR</button>
     </div>
 
     <div class="card">
-      <img src="img/candidato2.jpg">
-      <h3>Candidato 2</h3>
+      <img src="img/Magrinha.jpg">
+      <h3>Magrinha</h3>
       <button onclick="votar(2)">VOTAR</button>
     </div>
 
     <div class="card">
-      <img src="img/candidato3.jpg">
-      <h3>Candidato 3</h3>
+      <img src="img/Gordinha.jpg">
+      <h3>Gordinha</h3>
       <button onclick="votar(3)">VOTAR</button>
     </div>
 
     <div class="card">
-      <img src="img/candidato4.jpg">
-      <h3>Candidato 4</h3>
+      <img src="img/Gordinho.jpg">
+      <h3>Gordinho</h3>
       <button onclick="votar(4)">VOTAR</button>
     </div>
 
+    <div class="card">
+      <img src="img/Atlético.jpg">
+      <h3>Atlético</h3>
+      <button onclick="votar(5)">VOTAR</button>
+    </div>
+
+    <div class="card">
+      <img src="img/Atlética.jpg">
+      <h3>Atlética</h3>
+      <button onclick="votar(6)">VOTAR</button>
+    </div>
   </section>
 
   <section class="resultado">
     <h2>📊 Resultado em tempo real</h2>
- <div class="grafico">
+
+    <!-- GRÁFICO -->
+    <div class="grafico">
   <div class="barra-container">
     <span id="pct1" class="porcentagem">0%</span>
     <div id="bar1" class="barra"></div>
@@ -64,18 +75,17 @@
     <span id="pct4" class="porcentagem">0%</span>
     <div id="bar4" class="barra"></div>
   </div>
+
+  <div class="barra-container">
+    <span id="pct5" class="porcentagem">0%</span>
+    <div id="bar5" class="barra"></div>
+  </div>
+
+  <div class="barra-container">
+    <span id="pct6" class="porcentagem">0%</span>
+    <div id="bar6" class="barra"></div>
+  </div>
 </div>
-
-
-  </section>
-</div>
-<div class="finalizar">
-  <button onclick="encerrarVotacao()">Encerrar Votação</button>
- <div id="resultadoFinal" class="resultado-final"></div>
-<img id="fotoVencedor" class="foto-vencedor" style="display:none;">
-
-</div>
-
 <script src="script.js"></script>
 </body>
 </html>

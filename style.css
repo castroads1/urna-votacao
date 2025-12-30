@@ -37,9 +37,10 @@ header p {
 
 .candidatos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 25px;
 }
+
 
 .card {
   background: #f7f7f7;
@@ -47,6 +48,11 @@ header p {
   padding: 15px;
   text-align: center;
   transition: transform .3s;
+
+  /* 🔧 AJUSTE EXTRA */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card:hover {
@@ -55,9 +61,10 @@ header p {
 
 .card img {
   width: 100%;
-  height: 160px;
+  height: 180px;
   border-radius: 12px;
-  object-fit: cover;
+  object-fit: contain;
+  background: #fff;
 }
 
 .card h3 {
@@ -145,4 +152,62 @@ header p {
   border-radius: 50%;
   object-fit: cover;
   border: 5px solid #2c5364;
+}
+.lista-votos {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.lista-votos p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0f2027;
+  margin: 4px 0;
+}
+.tabela-wrapper {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabela-votos {
+  width: 100%;
+  max-width: 420px;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+
+.tabela-votos h3 {
+  margin-bottom: 15px;
+  color: #0f2027;
+}
+
+.tabela-votos table {
+  width: 100%;
+  max-width: 400px;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+
+.tabela-votos th {
+  background: #2c5364;
+  color: #fff;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.tabela-votos td {
+  padding: 12px;
+  text-align: center;
+  font-size: 15px;
+  background: #f9f9f9;
+}
+
+.tabela-votos tr:nth-child(even) td {
+  background: #ececec;
 }

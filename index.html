@@ -44,13 +44,36 @@
 
   <section class="resultado">
     <h2>📊 Resultado em tempo real</h2>
-    <div class="grafico">
-      <div id="bar1" class="barra">1</div>
-      <div id="bar2" class="barra">2</div>
-      <div id="bar3" class="barra">3</div>
-      <div id="bar4" class="barra">4</div>
-    </div>
+ <div class="grafico">
+  <div class="barra-container">
+    <span id="pct1" class="porcentagem">0%</span>
+    <div id="bar1" class="barra"></div>
+  </div>
+
+  <div class="barra-container">
+    <span id="pct2" class="porcentagem">0%</span>
+    <div id="bar2" class="barra"></div>
+  </div>
+
+  <div class="barra-container">
+    <span id="pct3" class="porcentagem">0%</span>
+    <div id="bar3" class="barra"></div>
+  </div>
+
+  <div class="barra-container">
+    <span id="pct4" class="porcentagem">0%</span>
+    <div id="bar4" class="barra"></div>
+  </div>
+</div>
+
+
   </section>
+</div>
+<div class="finalizar">
+  <button onclick="encerrarVotacao()">Encerrar Votação</button>
+ <div id="resultadoFinal" class="resultado-final"></div>
+<img id="fotoVencedor" class="foto-vencedor" style="display:none;">
+
 </div>
 
 <script src="script.js"></script>

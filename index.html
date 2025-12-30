@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Urna Eletrônica - Simulação</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="<title>Urna de votação</title>" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>🗳️ Urna Eletrônica</h1>
+    <p>Votação A e B</p>
+  </header>
+
+  <section class="candidatos">
+
+    <div class="card">
+      <img src="img/candidato1.jpg">
+      <h3>Candidato 1</h3>
+      <button onclick="votar(1)">VOTAR</button>
+    </div>
+
+    <div class="card">
+      <img src="img/candidato2.jpg">
+      <h3>Candidato 2</h3>
+      <button onclick="votar(2)">VOTAR</button>
+    </div>
+
+    <div class="card">
+      <img src="img/candidato3.jpg">
+      <h3>Candidato 3</h3>
+      <button onclick="votar(3)">VOTAR</button>
+    </div>
+
+    <div class="card">
+      <img src="img/candidato4.jpg">
+      <h3>Candidato 4</h3>
+      <button onclick="votar(4)">VOTAR</button>
+    </div>
+
+  </section>
+
+  <section class="resultado">
+    <h2>📊 Resultado em tempo real</h2>
+    <div class="grafico">
+      <div id="bar1" class="barra">1</div>
+      <div id="bar2" class="barra">2</div>
+      <div id="bar3" class="barra">3</div>
+      <div id="bar4" class="barra">4</div>
+    </div>
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
